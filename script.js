@@ -1,4 +1,4 @@
-import { arrow } from "./Icons/icons.js"
+import { arrow } from "./Icons/icons.js";
 
 const root = document.getElementById("container");
 function assets(data) {
@@ -10,7 +10,7 @@ function assets(data) {
     switch (data?.asset_id) {
       case 18883: {
         return `<iframe 
-        width="410" 
+        width="480" 
         height="315" 
         src="${data?.asset_content}" 
         title="YouTube video player" 
@@ -20,14 +20,20 @@ function assets(data) {
         encrypted-media; gyroscope; 
         picture-in-picture; web-share" 
         allowfullscreen></iframe>`;
-      };
-      case 18884:{
+      }
+      case 18884: {
         return `
         <div class="thread">
         <img src=${arrow} />
         <h3> Thread A</h3>
         <div>
-        `
+        `;
+      }
+      case 18885: {
+        return `<div></div>`;
+      }
+      case 18886: {
+        return `<div></div>`;
       }
     }
   }

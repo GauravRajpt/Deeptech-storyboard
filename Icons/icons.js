@@ -1,0 +1,1 @@
+export const arrow= "https://sdlms.deepthought.education/assets/uploads/files/files/up-arrow-black-icon.svg";

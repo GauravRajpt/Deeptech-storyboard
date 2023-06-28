@@ -90,7 +90,7 @@ font-family: Poly;
 letter-spacing: 0.32px;
 }
 .container{
-    width: fit-content;
+    
     border-radius: 15px;
     background: #FDFDFD;
     width: 410px;
@@ -116,4 +116,27 @@ height: 83px;
 strong{
 
     font-weight: bolder;
+}
+.thread{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    border: 0.1px solid rgba(0, 0, 0, 0.40);
+background: rgba(254, 255, 192, 0.20);
+height: 35px;
+}
+.thread>img{
+    margin:5px;
+    width: 15.978px;
+height: 9.6px;
+cursor: pointer;
+
+}
+.thread>h3{
+    color: #000;
+font-size: 16px;
+font-family: Open Sans;
+font-weight: 600;
+letter-spacing: 0.32px;
 }

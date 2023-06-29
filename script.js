@@ -111,7 +111,21 @@ function threadComponent(){
    </h3>
    <textarea class="text"></textarea>
    </div>
-   
+    <div class="selectbox">
+    <select name="category">
+    <option value="">select category</option>
+    <option value="Remark">Remark</option>
+    <option value="Sub-argument">Sub-argument</option>
+    <option value="Sub-explanation">Sub-explanation</option>
+    <option value="Core-principle">Core-principle</option>
+    </select>
+    <select name="process">
+    <option value="">Select Process</option>
+    <option value="Question">Question</option>
+    <option value="Analogy">Analogy</option>
+    <option value="Sarcasm">Sarcasm</option>
+    </select>
+    </div>
     </div>
   </div>
   `

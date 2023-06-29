@@ -7,6 +7,7 @@ letter-spacing: 0.56px;
 }
 .submit-button{
  width: 121px;
+ cursor: pointer;
 height: 36px;
 border-radius: 10px;
 background: #0029FF;
@@ -143,33 +144,37 @@ letter-spacing: 0.32px;
 .containerSubthread{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .inner{
 display: flex;
 flex-direction: column;
-width: 199px;
+
 border-radius: 10px;
 justify-content: flex-end;
 background: rgba(0, 0, 0, 0.05);
 box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.25);
 
 }
+.w-199{
+    width: 199px;
+}
 .inner>h3{
     color: #000;
 font-size: 12px;
 font-family: Open Sans;
 font-style: normal;
-font-weight: 400;
+font-weight: 600;
 line-height: normal;
 opacity: 1;
 padding: 5px;
 }
 .text{
     resize: none;
-    width: 199px;
+    
     padding: 10px;
 height: 70px;
 border-radius: 10px;
@@ -193,6 +198,12 @@ box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.25);
     justify-content: space-around;
     margin-top: 20px;
    
+}
+.m-20{
+    margin:20px;
+}
+.mt-20{
+    margin-top: 20px;
 }
 .selectbox>select{
     border-radius: 5px;

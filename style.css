@@ -140,3 +140,50 @@ font-family: Open Sans;
 font-weight: 600;
 letter-spacing: 0.32px;
 }
+.containerSubthread{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.inner{
+display: flex;
+flex-direction: column;
+width: 199px;
+border-radius: 10px;
+justify-content: flex-end;
+background: rgba(0, 0, 0, 0.05);
+box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.25);
+
+}
+.inner>h3{
+    color: #000;
+font-size: 12px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+opacity: 1;
+padding: 5px;
+}
+.text{
+    resize: none;
+    width: 199px;
+    padding: 10px;
+height: 70px;
+border-radius: 10px;
+background: #FAFAFA;
+border: none;
+outline: none;
+box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+}
+.icons>img{
+    cursor: pointer;
+}

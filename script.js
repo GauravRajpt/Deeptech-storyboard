@@ -1,4 +1,8 @@
 import { arrow } from "./Icons/icons.js";
+import { bulb } from "./Icons/icons.js";
+import { msgIcon } from "./Icons/icons.js";
+import { question } from "./Icons/icons.js";
+import { rooticon } from "./Icons/icons.js";
 
 const root = document.getElementById("container");
 function assets(data) {
@@ -26,7 +30,9 @@ function assets(data) {
         <div class="thread">
         <img src=${arrow} />
         <h3> Thread A</h3>
-        <div>
+        </div>
+        ${threadComponent()}
+        
         `;
       }
       case 18885: {
@@ -78,4 +84,35 @@ function callAsset(json) {
   data.forEach((item) => {
     return assets(item);
   });
+}
+
+function threadComponent(){
+  return `
+  <div class="containerSubthread">
+    <div class="subThread1">
+    <div class="inner">
+    <h3>
+    Sub thread 1
+    </h3>
+    <textarea class="text"></textarea>
+    
+    </div>
+    <div class="icons">
+    <img src=${bulb} alt="bulb"/>
+    <img src=${msgIcon} alt="msgicon"/>
+    <img src=${question} alt="question"/>
+    <img src=${rooticon} alt="rooticon"/>
+    </div>
+    </div>
+    <div class="SubInterpretation1">
+   <div class="inner">
+   <h3>
+   Sub Interpretation 1
+   </h3>
+   <textarea class="text"></textarea>
+   </div>
+   
+    </div>
+  </div>
+  `
 }

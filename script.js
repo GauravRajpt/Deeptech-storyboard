@@ -1,6 +1,7 @@
 import template from "./components/Template.js";
 
 
+
 const root = document.getElementById("container");
 function assets(data) {  
   console.log(data);
@@ -31,4 +32,8 @@ function callAsset(json) {
     return assets(item);
   });
 }
+
+
+
+
 

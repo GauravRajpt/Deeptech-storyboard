@@ -2,7 +2,7 @@ import template from "./components/Template.js";
 
 
 const root = document.getElementById("container");
-function assets(data) {
+function assets(data) {  
   console.log(data);
   const templete = document.createElement("div");
   templete.innerHTML=template(data);

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>deepthought storyboard</title>
     <script  src="./script.js" type="module" ></script>
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./style.css" />
@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    
+    <script src="./components//Getcontent.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -109,6 +109,13 @@ function getsubcategory(event){
    switch(selectedOption.value){
     case "Learnability":{
       subCategory.innerHTML= subCategories.Learnability.map((i)=>`<option value=${i}>${i}<option>`).join('')
+    };
+    break;
+    case "Technology":{
+      subCategory.innerHTML= subCategories.Technology.map((i)=>`<option value=${i}>${i}<option>`).join('')
+    }
+    case "Miscellaneous":{
+      subCategory.innerHTML= subCategories.Miscellaneous.map((i)=>`<option value=${i}>${i}<option>`).join('')
     }
    }
   

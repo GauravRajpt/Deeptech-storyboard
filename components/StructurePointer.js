@@ -38,6 +38,26 @@ return `
 
 </div>
 </div>
+
+</div>
+<div class="category">
+<div class="innercontainer">
+<h3>Category</h3>
+<select>
+<option>-- Select --</option>
+<option onclick="getsubcategory()" value="Learnability">Learnability</option>
+<option onclick="getsubcategory()" value="Technology">Technology</option>
+<option onclick="getsubcategory()" value="Miscellaneous">Miscellaneous</option>
+</select>
+</div>
+<div class="innercontainer">
+<h3>Sub Category</h3>
+<select id="selectsub">
+
+</select>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

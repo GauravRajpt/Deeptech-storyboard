@@ -90,16 +90,31 @@
     wordlength.innerHTML=  wordCount.length;
   }, 100);
 }
-const subCategory={
-  Learnability:["Select Sub-Category (Optional)","Spontaneity","Mental Models"],
-  Technology:["Select Sub-Category (Optional)","Problem solving","Programming Languages"],
-  Miscellaneous:["Select Sub-Category (Optional)","Posts","discussion"]
+
+const subCategories={
+  Learnability:["Select Sub-Category (Optional)", "Spontaneity","Mental Models"],
+  Technology:["Select Sub-Category (Optional)", "Problem solving","Programming Languages"],
+  Miscellaneous:["Select Sub-Category (Optional)", "Posts","discussion"]
 }
-function getsubcategory(){
-  const option= document.createElement("option");
+
   
-  console.log("hii");
+
+function getsubcategory(event){
+  setTimeout(()=>{
+  
+   const selectedOption= event.target.options[event.target.selectedIndex];
+   const subCategory= document.getElementById("selectsub");
+   console.log(subCategory)
+   subCategories.Learnability.forEach(i=>console.log(i))
+   switch(selectedOption.value){
+    case "Learnability":{
+      subCategory.innerHTML= subCategories.Learnability.map((i)=>`<option value=${i}>${i}<option>`).join('')
+    }
+   }
+  
+},100)
 }
+
     </script>
     
   </body>

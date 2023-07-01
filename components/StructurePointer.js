@@ -43,11 +43,11 @@ return `
 <div class="category">
 <div class="innercontainer">
 <h3>Category</h3>
-<select>
+<select id="category" onchange="getsubcategory(event)">
 <option>-- Select --</option>
-<option onclick="getsubcategory()" value="Learnability">Learnability</option>
-<option onclick="getsubcategory()" value="Technology">Technology</option>
-<option onclick="getsubcategory()" value="Miscellaneous">Miscellaneous</option>
+<option value="Learnability">Learnability</option>
+<option  value="Technology">Technology</option>
+<option  value="Miscellaneous">Miscellaneous</option>
 </select>
 </div>
 <div class="innercontainer">

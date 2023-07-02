@@ -22,7 +22,7 @@ function getContent(data){
     case 18884: {
       return `
         <div class="thread">
-        <img src=${arrow} />
+        <img src=${arrow} onclick="transform(event)" />
         <h3> Thread A</h3>
         </div>
         ${threadComponent()}

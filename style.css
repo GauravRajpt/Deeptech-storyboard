@@ -111,13 +111,7 @@ main {
   height: 83px;
   
 }
-.toggle{
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s ease-in-out;
-  padding: 0px;
 
-}
 
 strong {
   font-weight: bolder;
@@ -385,7 +379,21 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.28px;
+padding: 20px;
 }
 .colapse-container{
   cursor: pointer;
+}
+
+
+.rotate{
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+.toggle{
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  padding: 0px;
+
 }

@@ -1,9 +1,10 @@
 import structurePointer from "./StructurePointer.js";
 import { arrow } from "../Icons/icons.js";
 import threadComponent from "./ThreadComponent.js";
+import fourSaMethod from "./fourSaMethod.js";
 
 //conditions to render data in each asset
-function getContent(data) {
+function getContent(data){
   switch (data?.asset_id) {
     case 18883: {
       return `<iframe 
@@ -31,7 +32,7 @@ function getContent(data) {
       return `<div>${structurePointer()}</div>`;
     }
     case 18886: {
-      return `<div></div>`;
+      return `<div>${fourSaMethod()}</div>`;
     }
   }
 };

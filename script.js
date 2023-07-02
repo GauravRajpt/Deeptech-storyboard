@@ -32,6 +32,7 @@ function callAsset(json) {
     return assets(item);
   });
 }
+const profile= document.getElementById("profile");
 
 
 
